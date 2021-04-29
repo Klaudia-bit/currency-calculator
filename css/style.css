@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    color: #333;
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+}
+
+.margin {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.backgroundColor {
+    background-color: white;
+}
+
+.header__background {
+    background-color: hsl(194, 36%, 47%);
+    border-radius: 5px;
+}
+
+.header__text {
+    color: white;
+    padding: 8px 8px;
+}
+
+.header__centerText {
+    text-align: center;
+}
+
+.paragraph__center {
+    text-align: center;
+}
+
+.footer {
+    background-color: hsl(194, 36%, 47%);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

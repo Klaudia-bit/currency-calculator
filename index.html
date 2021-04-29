@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body backgroundColor">
+    <div class="margin">
+        <header>
+            <h1 class="header__centerText header__text header__background">Kantor</h1>
+        </header>
+        <main>
+            <form class="form js-form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Przelicznik walut</legend>
+                    <p class="paragraph__center">
+                        <label>
+                            <span class="form__labelText">Kwota w PLN*: </span>
+                            <input class="form__field js-amountPln" required type="number" min="0" step="any">
+                        </label>
+                    </p>
+                    <p class="paragraph__center">
+                        <label>
+                            <span class="form__labelText">EUR: </span>
+                            <input class="form__field js-rateEur" type="number" min="0.1" step="0.01" value="4.61">
+                        </label>
+                    </p>
+                    <p class="paragraph__center">
+                        <label>
+                            <span class="form__labelText">USD: </span>
+                            <input class="form__field js-rateUsd" type="number" min="0.1" step="0.01" value="3.81">
+                        </label>
+                    </p>
+                    <p class="paragraph__center">
+                        <label>
+                            <span class="form__labelText">GBP: </span>
+                            <input class="form__field js-rateGbp" type="number" min="0.1" step="0.01" value="5.31">
+                        </label>
+                    </p>
+                    <p class="paragraph__center">
+                        <label>
+                            <span class="form__labelText">CHF: </span>
+                            <input class="form__field js-rateChf" type="number" min="0.1" step="0.01" value="4.19">
+                        </label>
+                    </p>
+                    <p class="paragraph__center">
+                        <label>
+                            <span class="form__labelText">Wybrana waluta:</span>
+                            <select name="wybranyKurs" class="form__field js-selectedCurrency">
+                                <option value="EUR">EUR</option>
+                                <option value="USD">USD</option>
+                                <option value="GBP">GBP</option>
+                                <option value="CHF">CHF</option>
+                            </select>
+                        </label>
+                    </p>
+                </fieldset>
+                <p class="paragraph__center">
+                    <button class="form__button">Przelicz</button>
+                    <button class="form__button js-reset" type="reset">Wyczyść formularz</button>
+                </p>
+            </form>
+            <p>Twoja kwota po przeliczeniu wynosi: <strong class="js-exchange">N/A</strong></p>
+        </main>
+    </div>
+    <footer class="footer">
+        &copy; Copyright 2021 by Paweł Dardziński - wszystkie prawa zastrzeżone 😎</footer>
+</body>
+
+</html>
