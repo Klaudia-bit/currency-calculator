@@ -3,6 +3,7 @@
     max-width: 100px;
     display: inline-block;
     margin-right: 5px;
+    font-weight: bold;
 }
 
 .form__field {
