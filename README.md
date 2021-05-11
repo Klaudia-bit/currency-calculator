@@ -19,3 +19,5 @@ This is simple currency converter. This project was created to convert amount in
 1. Type the amount in field "Kwota w PLN"
 2. Click button "Przelicz" to get result
 3. If you want to reset the form click button "Wyczyść formularz"
+
+![How to use it](https://github.com/Klaudia-bit/currency-calculator/blob/main/images/Animation.gif)
