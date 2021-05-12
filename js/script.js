@@ -55,12 +55,18 @@
         exchangeElement.innerText = result.toFixed(2) + ' ' + currencyName;
     };
 
+    const onFormReset = () => {
+
+        document.querySelector(".js-exchange").innerText = "N/A" ;
+    }
     const init = () => {
 
         const formElement = document.querySelector(".js-form");
 
         formElement.addEventListener("submit", onFormSubmit);
+        formElement.addEventListener("reset", onFormReset); 
     }
+
     init();
 }
 
