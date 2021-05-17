@@ -52,7 +52,7 @@
 
         const result = calculateResult(amountPln, selectedCurrency);
 
-        exchangeElement.innerText = result.toFixed(2) + ' ' + currencyName;
+        exchangeElement.innerText = `${result.toFixed(2)} ${currencyName}`;
     };
 
     const onFormReset = () => {
